@@ -29,7 +29,7 @@ jobs:
           mkdir -p ./devops/ansible/
           export INVENTORY_FILE=./devops/ansible/inventory.ini
           echo "[my_host_group]" > $INVENTORY_FILE
-          echo "${{ secrets.AKAMAI_INSTANCE_IP_ADDRESS }}" >> $INVENTORY_FILE
+          echo "${{ secrets.AKAMAI_INSTANCE_IP_ADRESS }}" >> $INVENTORY_FILE
 
       - name: Ansible Default Configuration File
         run: |
